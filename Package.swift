@@ -22,10 +22,10 @@ let package = Package(
             dependencies: [],
             sources: [
               "KioskConfig.swift",
-              "MPKioskAssets.swift",
-              "KioskColors.xcassets",
-              "KioskImages.xcassets"
-            ]),
+              "MPKioskAssets.swift"
+            ],
+            resources: [.process("Resources")]
+        ),
         .testTarget(
             name: "MPKioskAssetsTests",
             dependencies: ["MPKioskAssets"]),

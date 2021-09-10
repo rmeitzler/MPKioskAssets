@@ -28,3 +28,5 @@ public extension Image {
 //    return
 //  }
 }
+
+public let kioskLogo = UIImage(named: "kiosk_logo", in: Bundle.module, compatibleWith: nil)

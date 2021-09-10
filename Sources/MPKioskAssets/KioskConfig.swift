@@ -7,6 +7,12 @@
 
 import Foundation
 
+enum KioskLayoutStyle {
+  case square
+  case wide
+}
+
 struct KioskConfig {
-  
+  var allowLoyalty: Bool = true
+  var layoutStyle: KioskLayoutStyle = .wide
 }

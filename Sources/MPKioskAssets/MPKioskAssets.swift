@@ -15,13 +15,12 @@ import SwiftUI
 public extension Image {
   init(packageResource name: String, ofType type: String) {
       
-      guard let path = Bundle.module.path(forResource: name, ofType: type),
-        let image = UIImage(contentsOfFile: path) else {
+    guard let img = UIImage(named: name, in: Bundle.module, compatibleWith: nil) else {
             self.init(name)
             return
         }
     
-        self.init(uiImage: image)
+        self.init(uiImage: img)
     }
   
 //  init(kioskAsset name: String) {

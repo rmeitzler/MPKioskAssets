@@ -25,8 +25,8 @@ let package = Package(
               "MPKioskAssets.swift"
             ],
             resources: [.process("Resources"),
-                        .process("KioskColors"),
-                        .process("KioskColors")]
+                        .process("KioskImages.xcassets"),
+                        .process("KioskColors.xcassets")]
         ),
         .testTarget(
             name: "MPKioskAssetsTests",

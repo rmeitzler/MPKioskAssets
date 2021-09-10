@@ -13,7 +13,7 @@ public enum KioskLayoutStyle {
 }
 
 public struct KioskConfig {
-  public var allowLoyalty: Bool = true
+  public var allowLoyalty: Bool = false
   public var layoutStyle: KioskLayoutStyle = .wide
   
   public init() {

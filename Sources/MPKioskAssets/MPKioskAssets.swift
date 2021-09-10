@@ -1,8 +1,13 @@
+@available(iOS 13.0.0, *)
 public struct MPKioskAssets {
     public private(set) var text = "Hello, World!"
 
     public init() {
     }
+  
+  @ViewBuilder public func kioskImage(_ name: String) -> some View {
+    Image(name)
+  }
 }
 
 import SwiftUI

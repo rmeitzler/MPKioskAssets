@@ -5,7 +5,7 @@ public struct MPKioskAssets {
     public init() {
     }
   
-  @ViewBuilder public func kioskImage(_ name: String) -> some View {
+  public func kioskImage(_ name: String) -> Image {
     Image(name)
   }
 }

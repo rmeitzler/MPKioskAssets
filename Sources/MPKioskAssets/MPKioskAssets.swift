@@ -5,15 +5,12 @@ public struct MPKioskAssets {
     public init() {
     }
   
-  public func kioskImage(_ name: String) -> Image {
-    Image(name)
-  }
 }
 
 import SwiftUI
 @available(iOS 13.0, *)
 public extension Image {
-  init(packageResource name: String, ofType type: String) {
+  init(kioskAsset name: String) {
       
     guard let img = UIImage(named: name, in: Bundle.module, compatibleWith: nil) else {
             self.init(name)
@@ -22,10 +19,4 @@ public extension Image {
     
         self.init(uiImage: img)
     }
-  
-//  init(kioskAsset name: String) {
-//    return
-//  }
 }
-
-public let kioskLogo = UIImage(named: "kiosk_logo", in: Bundle.module, compatibleWith: nil)

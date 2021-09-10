@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum KioskLayoutStyle {
+public enum KioskLayoutStyle {
   case square
   case wide
 }
 
-struct KioskConfig {
-  var allowLoyalty: Bool = true
-  var layoutStyle: KioskLayoutStyle = .wide
+public struct KioskConfig {
+  public var allowLoyalty: Bool = true
+  public var layoutStyle: KioskLayoutStyle = .wide
 }
